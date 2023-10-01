@@ -1,0 +1,79 @@
+:root {
+  --task-background: #ffcb2e;
+  --task-text: #0056b3;
+  --button-color: #0056b3;
+  --button-text: white;
+  --button-hover: rgb(0, 41, 84);
+  --border: #0056b3;
+}
+
+.todo-list-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid var(--border);
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.add-button {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  border: 2px solid var(--border);
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: var(--button-hover);
+  border: 2px solid var(--button-hover);
+  color: white;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: var(--task-background);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.task-name {
+  flex-grow: 1;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--task-text);
+}
+
+.done {
+  text-decoration: line-through var(--task-text);
+}
+
+.undone {
+  text-decoration: none;
+}
+
+.task-buttons {
+  margin-left: 10px;
+  background-color: var(--button-color);
+  color: var(--button-text);
+  border: none;
+  border-radius: 5px;
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-buttons:hover {
+  background-color: var(--button-hover);
+}
