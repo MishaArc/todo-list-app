@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './ToDoList.css'
+mport './ToDoList.css'
 
-const ToDoList = () => {
-  const [list, updateList] = useState([])
+const TDoList = () => {
+  const list, updateList] = useState([])
   const [inputValue, setInputValue] = useState('')
 
   const deleteTask = (id) => {
